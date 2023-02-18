@@ -1,11 +1,10 @@
-# zaino-s-store
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-    <title>uuuuuuuuuuZaino-s-Store</title>
+    <title>Zaino-s-Store</title>
     <style>
         body {
-            background-image: url('https://4kwallpapers.com/images/wallpapers/windows-11-landscape-scenery-sunrise-stock-day-light-3840x2160-5661.jpg');
+            background-image: url('https://images.unsplash.com/photo-1536152470836-b943b246224c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGQlMjBuYXR1cmUlMjB3YWxscGFwZXJ8ZW58MHx8MHx8&w=1000&q=80.jpg');
             background-size: cover;
         }
     </style>
@@ -16,6 +15,7 @@
             font-family: Arial, sans-serif;
         }
 
+
         header {
             background-color: #333;
             color: #fff;
@@ -23,26 +23,23 @@
             text-align: center;
         }
 
-        main {
-            max-width: 950px;
-            margin: 0 auto;
-            padding: 2rem;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-
         .product {
-            width: 18rem;
-            margin-bottom: 2rem;
-            border: 1px solid #ccc;
-            padding: 1rem;
-            box-shadow: 2px 2px 5px #ccc;
+            display: inline-block;
+            margin: 14px;
+            width: 180px;
+            text-align: center;
         }
 
             .product img {
-                max-width: 100%;
-                height: auto;
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+            }
+
+            .product h3 {
+                font-size: 14px;
+                margin-top: 7px;
+                margin-bottom: 3.5px;
             }
 
             .product h2 {
@@ -50,69 +47,29 @@
             }
 
             .product p {
-                margin: 0;
-                font-size: 0.9rem;
-                margin-bottom: 0.5rem;
+                font-size: 10px;
+                margin-top: 3.5px;
+                margin-bottom: 7px;
             }
 
             .product button {
-                background-color: #333;
-                color: #fff;
-                padding: 0.5rem;
+                font-size: 10px;
+                padding: 6px 14px;
+                background-color: #4CAF50;
+                color: white;
                 border: none;
+                border-radius: 3.5px;
                 cursor: pointer;
-                transition: background-color 0.3s;
-                margin-top: 1rem;
             }
 
-                .product button:hover {
-                    background-color: #555;
-                }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>Zaino's Store</h1>
-    </header>
-    <main>
-        <div class="product">
-            <img src="product1.jpg" alt="Product 1">
-            <h2>Product 1</h2>
-            <p>Description of Product 1.</p>
-            <p>Price: $10</p>
-            <button>Order Now</button>
-        </div>
-        <div class="product">
-            <img src="product2.jpg" alt="Product 2">
-            <h2>Product 2</h2>
-            <p>Description of Product 2.</p>
-            <p>Price: $20</p>
-            <button>Order Now</button>
-        </div>
-        <!-- continue adding products until 40 products are added -->
-    </main>
-    <!-- Modal HTML -->
-    <div class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Order Form</h2>
-            <form id="order-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="mobile">Mobile No:</label>
-                <input type="tel" id="mobile" name="mobile" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="address">Address:</label>
-                <textarea id="address" name="address" required></textarea>
-                <input type="hidden" id="product-name" name="product-name">
-                <input type="submit" value="Submit">
-            </form>
-        </div>
-    </div>
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
 
-    <!-- CSS -->
-    <style>
+        <!-- CSS -->
+        
         .modal {
             display: none;
             position: fixed;
@@ -133,6 +90,7 @@
             width: 60%;
         }
 
+        .close:hover,
         .close {
             color: #aaaaaa;
             float: right;
@@ -140,7 +98,7 @@
             font-weight: bold;
         }
 
-            .close:hover,
+
             .close:focus {
                 color: #000;
                 text-decoration: none;
@@ -178,7 +136,131 @@
                     #order-form input[type="submit"]:hover {
                         background-color: #45a049;
                     }
+    
+
     </style>
+</head>
+<body>
+    <header>
+        <h1>Zaino's Store</h1>
+    </header>
+    <main>
+        <!-- First product -->
+        <div class="product">
+            <h2>Product 1</h2>
+            <img src="product1.jpg" alt="Product 1">
+            <p>Description of Product 1</p>
+            <p>Price: $10.00</p>
+            <button onclick="showForm('Product 1')">Order now</button>
+
+            <p id="Product 1 Status"></p>
+        </div>
+
+        <!-- Second product -->
+        <div class="product">
+            <h2>Product 2</h2>
+            <img src="product2.jpg" alt="Product 2">
+            <p>Description of Product 2</p>
+            <p>Price: $15.00</p>
+            <button onclick="showForm('Product 2')">Order now</button>
+            <p id="Product 2 Status"></p>
+        </div>
+        <!-- Second product -->
+        <div class="product">
+            <h2>Product 2</h2>
+            <img src="product2.jpg" alt="Product 2">
+            <p>Description of Product 2</p>
+            <p>Price: $15.00</p>
+            <button onclick="showForm('Product 1')">Order now</button>
+
+            <p id="Product 2 Status"></p>
+        </div>
+        <!-- Second product -->
+        <div class="product">
+            <h2>Product 2</h2>
+            <img src="product2.jpg" alt="Product 2">
+            <p>Description of Product 2</p>
+            <p>Price: $15.00</p>
+            <button onclick="showForm('Product 1')">Order now</button>
+
+            <p id="Product 2 Status"></p>
+        </div>
+        <!-- Second product -->
+        <div class="product">
+            <h2>Product 2</h2>
+            <img src="product2.jpg" alt="Product 2">
+            <p>Description of Product 2</p>
+            <p>Price: $15.00</p>
+            <button onclick="showForm('Product 1')">Order now</button>
+            <p id="Product 2 Status"></p>
+        </div>
+        <script>
+            function showForm(productName) {
+                document.getElementById('product-name').value = productName;
+                document.getElementById('order-form').style.display = 'block';
+                document.getElementById('order-form').scrollIntoView({ behavior: 'smooth' });
+            }
+        </script>
+
+        <script>
+            // Add event listeners to all "Order now" buttons
+            const orderNowButtons = document.querySelectorAll('.order-now');
+            orderNowButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const product = button.getAttribute('data-product');
+                    const form = document.getElementById('order-form');
+                    const productField = form.elements['product'];
+                    productField.value = product;
+                    const formContainer = document.querySelector('.order-form-container');
+                    formContainer.scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+
+            // Submit the form data to the server
+            const form = document.getElementById('order-form');
+            form.addEventListener('submit', (event) => {
+                event.preventDefault();
+                const formData = new FormData(form);
+                fetch('process-form.php', {
+                    method: 'POST',
+                    body: formData
+                })
+                    .then(response => {
+                        if (response.ok) {
+                            alert('Your order has been submitted. Thank you!');
+                            form.reset();
+                        } else {
+                            throw new Error('Network response was not ok.');
+                        }
+                    })
+                    .catch(error => {
+                        console.error('There was a problem submitting the form:', error);
+                    });
+            });
+        </script>
+
+    </main>
+
+    <!-- Modal HTML -->
+    <div class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Order Form</h2>
+            <form id="order-form">
+                <input type="text" id="product-name" name="product-name" readonly><br><br />
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="mobile">Mobile No:</label>
+                <input type="tel" id="mobile" name="mobile" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required></textarea>
+                <input type="hidden" id="product-name" name="product-name">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
     <script>
         // Get all the "Order now" buttons
         const orderButtons = document.querySelectorAll('.order-button');
@@ -220,7 +302,7 @@
 
             // Send the form data to the server
             const xhr = new XMLHttpRequest();
-            xhr.open('POST', 'order.php');
+            xhr.open('POST', 'process-form.php');
             xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
             xhr.onload = function () {
                 // Hide the form and show the success message
@@ -229,21 +311,6 @@
             };
             xhr.send(new URLSearchParams(formData).toString());
         });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         // Select the form element
         const form = document.getElementById('order-form');
@@ -263,7 +330,7 @@
             const xhr = new XMLHttpRequest();
 
             // Set the URL and request method
-            xhr.open('POST', 'url-to-server', true);
+            xhr.open('POST', 'process-form.php', true);
 
             // Set the request header to send form data as JSON
             xhr.setRequestHeader('Content-Type', 'application/json');
@@ -290,12 +357,6 @@
             // Show a message to the user that the form was submitted successfully
             alert('Form submitted successfully!');
         });
-
-
-
-
-
-
 
     </script>
 
