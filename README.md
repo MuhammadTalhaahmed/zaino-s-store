@@ -302,7 +302,7 @@
 
             // Send the form data to the server
             const xhr = new XMLHttpRequest();
-            xhr.open('POST', 'process-form.php');
+            xhr.open('POST', 'https://zaino-s-store.000webhostapp.com/index.php');
             xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
             xhr.onload = function () {
                 // Hide the form and show the success message
@@ -330,7 +330,7 @@
             const xhr = new XMLHttpRequest();
 
             // Set the URL and request method
-            xhr.open('POST', 'process-form.php', true);
+            xhr.open('POST', 'https://zaino-s-store.000webhostapp.com/index.php', true);
 
             // Set the request header to send form data as JSON
             xhr.setRequestHeader('Content-Type', 'application/json');
