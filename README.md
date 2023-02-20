@@ -255,8 +255,8 @@
                 <input type="email" id="email" name="email" required>
                 <label for="address">Address:</label>
                 <textarea id="address" name="address" required></textarea>
-                <label for="product">Product:</label>
-                <input type="product" id="product" name="product" required>
+                <label for="product">Product Name:</label>
+                <input type="text" id="product" name="product" required>
                 <input type="submit" value="Submit">
             </form>
         </div>
