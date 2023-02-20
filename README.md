@@ -257,6 +257,8 @@
                 <textarea id="address" name="address" required></textarea>
                 <label for="product">Product Name:</label>
                 <input type="text" id="product" name="product" required>
+                <input type="text" id="product-name" name="product-name" readonly><br><br />
+                <input type="hidden" id="product-name" name="product-name">
                 <input type="submit" value="Submit">
             </form>
         </div>
