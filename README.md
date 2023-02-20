@@ -246,7 +246,7 @@
             <span class="close">&times;</span>
             <h2>Order Form</h2>
             <form id="order-form" action="https://zaino-s-store.000webhostapp.com/index.php" method="POST">
-                
+                <input type="text" id="product-name" name="product-name" readonly><br><br />
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
                 <label for="mobile">Mobile No:</label>
@@ -257,7 +257,6 @@
                 <textarea id="address" name="address" required></textarea>
                 <label for="product">Product Name:</label>
                 <input type="text" id="product" name="product" required>
-                <input type="text" id="product-name" name="product-name" readonly><br><br />
                 <input type="hidden" id="product-name" name="product-name">
                 <input type="submit" value="Submit">
             </form>
