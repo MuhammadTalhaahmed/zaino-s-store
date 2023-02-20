@@ -151,6 +151,7 @@
             <img src="product1.jpg" alt="Product 1">
             <p>Description of Product 1</p>
             <p>Price: $10.00</p>
+            <button onclick="setProduct('Product 1'); showForm('Product 1')">New Order now</button>
             <button onclick="showForm('Product 1')">Order now</button>
 
             <p id="Product 1 Status"></p>
@@ -194,6 +195,11 @@
             <button onclick="showForm('Product 1')">Order now</button>
             <p id="Product 2 Status"></p>
         </div>
+        <script>
+        function setProduct(productName) {
+  document.getElementById('product').value = productName;
+}
+<script>
         <script>
             function showForm(productName) {
                 document.getElementById('product-name').value = productName;
@@ -241,26 +247,18 @@
 
     </main>
 
-    <!-- Modal HTML -->
-    <div class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Order Form</h2>
-            <form id="order-form">
-                <input type="text" id="product-name" name="product-name" readonly><br><br />
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="mobile">Mobile No:</label>
-                <input type="tel" id="mobile" name="mobile" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="address">Address:</label>
-                <textarea id="address" name="address" required></textarea>
-                <input type="hidden" id="product-name" name="product-name">
-                <input type="submit" value="Submit">
-            </form>
-        </div>
-    </div>
+    <form id="order-form" action="https://zaino-s-store.000webhostapp.com/public_html/index.php" method="POST">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+  <label for="mobile">Mobile:</label>
+  <input type="text" id="mobile" name="mobile" required>
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+  <label for="address">Address:</label>
+  <textarea id="address" name="address" required></textarea>
+  <input type="hidden" id="product" name="product" value="">
+  <input type="submit" value="Submit">
+</form>
     <script>
         // Get all the "Order now" buttons
         const orderButtons = document.querySelectorAll('.order-button');
