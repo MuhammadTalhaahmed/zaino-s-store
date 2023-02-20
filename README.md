@@ -221,7 +221,7 @@
             form.addEventListener('submit', (event) => {
                 event.preventDefault();
                 const formData = new FormData(form);
-                fetch('https://zaino-s-store.000webhostapp.com/public_html/index.php', {
+                fetch('https://zaino-s-store.000webhostapp.com/index.php', {
                     method: 'POST',
                     body: formData
                 })
@@ -245,7 +245,7 @@
         <div class="modal-content">
             <span class="close">&times;</span>
             <h2>Order Form</h2>
-            <form id="order-form" action="https://zaino-s-store.000webhostapp.com/public_html/index.php" method="POST">
+            <form id="order-form" action="https://zaino-s-store.000webhostapp.com/index.php" method="POST">
                 
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -303,7 +303,7 @@
 
             // Send the form data to the server
             const xhr = new XMLHttpRequest();
-            xhr.open('POST', 'https://zaino-s-store.000webhostapp.com/public_html/index.php');
+            xhr.open('POST', 'https://zaino-s-store.000webhostapp.com/index.php');
             xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
             xhr.onload = function () {
                 // Hide the form and show the success message
@@ -331,7 +331,7 @@
             const xhr = new XMLHttpRequest();
 
             // Set the URL and request method
-            xhr.open('POST', 'https://zaino-s-store.000webhostapp.com/public_html/index.php', true);
+            xhr.open('POST', 'https://zaino-s-store.000webhostapp.com/index.php', true);
 
             // Set the request header to send form data as JSON
             xhr.setRequestHeader('Content-Type', 'application/json');
