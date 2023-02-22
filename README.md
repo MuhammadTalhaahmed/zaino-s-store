@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H2R4B79ML7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H2R4B79ML7');
+</script>
+
+
     <title>Zaino-s-Store</title>
     <style>
         body {
