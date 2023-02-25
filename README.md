@@ -151,6 +151,10 @@
     
 
     </style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6110467688747925"
+     crossorigin="anonymous"></script>
+
+
 </head>
 <body>
     <header>
@@ -214,8 +218,7 @@
                 document.getElementById('order-form').scrollIntoView({ behavior: 'smooth' });
             }
         </script>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6110467688747925"
-        crossorigin="anonymous"></script>
+        
  
 
         <script>
