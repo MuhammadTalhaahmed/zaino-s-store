@@ -151,9 +151,6 @@
     
 
     </style>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6110467688747925"
-     crossorigin="anonymous"></script>
-
 
 </head>
 <body>
@@ -210,6 +207,20 @@
             <button onclick="showForm('Product 1')">Order now</button>
             <p id="Product 2 Status"></p>
         </div>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6110467688747925"
+     crossorigin="anonymous"></script>
+<!-- First ad -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6110467688747925"
+     data-ad-slot="3490493149"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
 
         <script>
             function showForm(productName) {
