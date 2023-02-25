@@ -206,6 +206,7 @@
             <button onclick="showForm('Product 1')">Order now</button>
             <p id="Product 2 Status"></p>
         </div>
+
         <script>
             function showForm(productName) {
                 document.getElementById('product-name').value = productName;
@@ -213,6 +214,9 @@
                 document.getElementById('order-form').scrollIntoView({ behavior: 'smooth' });
             }
         </script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6110467688747925"
+        crossorigin="anonymous"></script>
+ 
 
         <script>
             // Add event listeners to all "Order now" buttons
