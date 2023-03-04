@@ -210,6 +210,16 @@
             <button onclick="showForm('Product 1')">Order now</button>
             <p id="Product 2 Status"></p>
         </div>
+        <!-- Second product -->
+        <div class="product">
+            <h2>Product 2</h2>
+            <img src="whitepurse.jpg" alt="Product 2">
+            <p>Branded Decent white Bag</p>
+            <p>Price: Rs 1200</p>
+            <button onclick="showForm('Product 1')">Order now</button>
+            <p id="Product 2 Status"></p>
+        </div>
+
 
 
         <script>
