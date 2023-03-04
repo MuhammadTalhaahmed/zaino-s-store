@@ -16,7 +16,7 @@
 </script>
 
 
-    
+    <title>Zaino-s-Store</title>
     <style>
         body {
             background-image: url('Background.png');
